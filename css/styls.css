@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+}
+
+/* Cabecera y menú de navegación */
+
+header{   
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+div{
+    background: linear-gradient(#125612,#000000);
+    padding: 15px;
+}
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: #ffffff 2px 1px 10px;
+}
+nav{
+    background-color: #2c2b2b;
+    color: #ffffff;
+    height: auto;
+    display: block;
+}
+ul{
+    margin: auto;
+    font-size: 20px;
+    padding: 0;
+    
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+li>a{
+    color: #ffffff;
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    header {
+        width: 100%;
+    }
+}
+
+
+
+/*  Final Cabecera y menú de navegación */
+
+/* Pie de la página */
+
+footer{
+    background-color:#252121;
+    text-align: left;
+}
+footer>h3{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 30px;
+    margin: 0;
+    
+}
+/* Redes interactivo */
+.nav{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.nav:hover{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.line{
+    width: 15rem;
+    height: 3px;
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: auto;
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.nav:hover .line{
+    transform: scaleX(1);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    margin-inline: 2.5rem;
+    opacity: 0;
+    transition: 
+        transform 0.5s,
+        opacity 0.5s;
+}
+.nav-item:nth-child(odd){
+    transform: translateY(5rem);
+}
+.nav-item:nth-child(even){
+    transform: translateY(-5rem);
+}
+.nav:hover .nav-item{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Final Pie de la página */
+
+/* Main */
+/* Articulo cabecera */
+main{
+    background: url(/img/hojas-tropicales.jpg)  center  100% /cover  no-repeat;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+section{
+    background-color: #ffffff;
+    border: 1px;
+    box-shadow: #000000 1px 1px 4px 1px;
+    width: 1000px;
+    margin: auto;
+    padding: 30px 60px 30px 60px;
+    
+}
+@media screen and (max-width: 767px) {
+    main {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    main {
+        width: 100%;
+    }
+}
+
+
+.cabecera{
+    color: #ffffff;
+    text-shadow: #000000 1px 2px 3px;
+    font-size: 20px;
+    padding-top: 2px;
+    width: 600px;
+    height: 90px; 
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: url(/img/hojas-fondo.jpg) center 100%/ cover no-repeat;
+    border-radius: 10px;
+
+}
+.cabecera>p{
+    color: #000000;
+    text-shadow: 0 0 0;
+    margin: 0;
+}
+/* Resto de articulos */
+
+article{
+    text-align: center;
+}
+article>a>img{
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width: 767px) {
+    main article a img {
+        width: 150;
+        height: 150px;
+    }
+}
+
+/* Fin Resto de articulos */
+
+/* Paginas animales */
+
+article>img{
+    width: 300;
+    height: 300px;
+}
+hr{
+    border: 1px solid #ff8c00;
+    width: 400px;
+
+}
+@media screen and (max-width: 767px) {
+    main img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    main hr {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Final Paginas animales */
+
+
